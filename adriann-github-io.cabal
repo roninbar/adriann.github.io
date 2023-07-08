@@ -1,0 +1,21 @@
+cabal-version:      2.4
+name:               adriann-github-io
+version:            0.1.0.0
+author:             ron
+maintainer:         rinbar70@gmail.com
+extra-source-files: CHANGELOG.md
+
+library
+    exposed-modules:  MyLib
+    build-depends:    base ^>=4.14.3.0
+    hs-source-dirs:   src
+    default-language: Haskell2010
+
+executable adriann-github-io
+    main-is:          Main.hs
+    build-depends:
+        base ^>=4.14.3.0,
+        adriann-github-io
+
+    hs-source-dirs:   app
+    default-language: Haskell2010
